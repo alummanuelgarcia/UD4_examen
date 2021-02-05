@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE pedidos SYSTEM "sucursal.dtd">
+<pedidos>
+    <sucursal codigo = "A1234567">
+        <direccion> Madrid </direccion>
+        <nombre> Juan </nombre>
+        <fecha> 12/12/2000</fecha>
+        <observaciones> Urgente</observaciones>
+        <articulo codigo = "AAA 123">
+            <numunidades> 2 </numunidades>
+            <precio> 21 </precio>
+            <observacionesarticulo> Fregona </observacionesarticulo>
+            <plazo> 3 meses </plazo>
+        </articulo>
+    </sucursal>
+</pedidos>
+
+

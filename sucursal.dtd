@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT pedidos (sucursal+)>
+<!ELEMENT sucursal (direccion+,nombre,fecha,observaciones?,articulo)>
+<!ATTLIST sucursal codigo CDATA #REQUIRED>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT articulo (numunidades,precio,observacionesarticulo,plazo)>
+<!ATTLIST articulo codigo CDATA #REQUIRED>
+<!ELEMENT numunidades (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT observacionesarticulo (#PCDATA)>
+<!ELEMENT plazo (#PCDATA)>
+

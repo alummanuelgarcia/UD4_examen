@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="0.1" xml:lang="es">
+    <xs:element name="pedidos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sucursal" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="direcciones" type="xs:string" />
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="fecha" type="xs:date" />
+                            <xs:element name="observaciones" type="xs:string" />
+                            <xs:element name="articulo" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="numunidades" type="xs:integer" />
+                                        <xs:element name="precio" type="xs:integer" />                                       
+                                        <xs:element name="observacionesarticulo" type="xs:string" />
+                                        <xs:element name="plazo" type="xs:string" />
+                                    <xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
